@@ -44,7 +44,7 @@ public class Order_Status {
         	conn.dataBase = "192.168.2.3";
         	
         	//1-1
-        	conn.rs_title = "SELECT SUM(DDZL.Pairs) FROM DDZL DDZL,XXZL XXZL WHERE DATEPART(YEAR, DDZL.DDRQ) = '2013' AND DDZL.DDLB = 'N' AND DDZL.DDZT = 'Y' AND XXZL.lbdh = 'O' AND DDZL.XieXing = XXZL.XieXing AND DDZL.SheHao = XXZL.SheHao GROUP BY DATENAME(MONTH, DDZL.DDRQ),DATEPART(MONTH, DDZL.DDRQ) ORDER BY DATEPART(MONTH, DDZL.DDRQ)";
+        	conn.rs_title = "SELECT SUM(DDZL.Pairs) FROM DDZL DDZL,XXZL XXZL WHERE DATEPART(YEAR, DDZL.DDRQ) = '2014' AND DDZL.DDLB = 'N' AND DDZL.DDZT = 'Y' AND XXZL.lbdh = 'O' AND DDZL.XieXing = XXZL.XieXing AND DDZL.SheHao = XXZL.SheHao GROUP BY DATENAME(MONTH, DDZL.DDRQ),DATEPART(MONTH, DDZL.DDRQ) ORDER BY DATEPART(MONTH, DDZL.DDRQ)";
         	System.out.println(conn.rs_title);
         	conn.Conn_SQL();
         	i = 1;
@@ -57,7 +57,7 @@ public class Order_Status {
         	conn.rs.close();
         	
 			//1-2
-			conn.rs_title = "SELECT SUM(Pairs) FROM DDZL WHERE DATEPART(YEAR, DDJQ) = '2013' GROUP BY DATENAME(MONTH, DDJQ),DATEPART(MONTH, DDJQ) ORDER BY DATEPART(MONTH, DDJQ)";
+			conn.rs_title = "SELECT SUM(Pairs) FROM DDZL WHERE DATEPART(YEAR, DDJQ) = '2014' GROUP BY DATENAME(MONTH, DDJQ),DATEPART(MONTH, DDJQ) ORDER BY DATEPART(MONTH, DDJQ)";
 			System.out.println(conn.rs_title);
         	conn.Conn_SQL();
         	i = 1;
@@ -73,7 +73,7 @@ public class Order_Status {
 			conn.rs.close();
 			
 			//1-3
-			conn.rs_title = "SELECT SUM(Qty) FROM DDS WHERE DATEPART(YEAR, CHRQ) = '2013' GROUP BY DATENAME(MONTH, CHRQ),DATEPART(MONTH, CHRQ) ORDER BY DATEPART(MONTH, CHRQ)";
+			conn.rs_title = "SELECT SUM(Qty) FROM DDS WHERE DATEPART(YEAR, CHRQ) = '2014' GROUP BY DATENAME(MONTH, CHRQ),DATEPART(MONTH, CHRQ) ORDER BY DATEPART(MONTH, CHRQ)";
 			System.out.println(conn.rs_title);
         	conn.Conn_SQL();
         	i = 1;
@@ -89,7 +89,7 @@ public class Order_Status {
 			conn.rs.close();
 			
 			//1-4
-        	conn.rs_title = "SELECT SUM(DDZL.Pairs) FROM DDZL DDZL,XXZL XXZL WHERE DATEPART(YEAR, DDZL.DDRQ) = '2013' AND DDZL.DDLB = 'N' AND DDZL.DDZT = 'Y' AND XXZL.lbdh != 'O' AND DDZL.XieXing = XXZL.XieXing AND DDZL.SheHao = XXZL.SheHao GROUP BY DATENAME(MONTH, DDZL.DDRQ),DATEPART(MONTH, DDZL.DDRQ) ORDER BY DATEPART(MONTH, DDZL.DDRQ)";
+        	conn.rs_title = "SELECT SUM(DDZL.Pairs) FROM DDZL DDZL,XXZL XXZL WHERE DATEPART(YEAR, DDZL.DDRQ) = '2014' AND DDZL.DDLB = 'N' AND DDZL.DDZT = 'Y' AND XXZL.lbdh != 'O' AND DDZL.XieXing = XXZL.XieXing AND DDZL.SheHao = XXZL.SheHao GROUP BY DATENAME(MONTH, DDZL.DDRQ),DATEPART(MONTH, DDZL.DDRQ) ORDER BY DATEPART(MONTH, DDZL.DDRQ)";
         	System.out.println(conn.rs_title);
         	conn.Conn_SQL();
         	i = 1;
@@ -108,7 +108,7 @@ public class Order_Status {
 			conn.password = "shinimex25620299";
         	conn.dataBase = "192.168.3.3";
         	//2-1
-        	conn.rs_title = "SELECT SUM(DDZL.Pairs) FROM DDZL DDZL,XXZL XXZL WHERE DATEPART(YEAR, DDZL.DDRQ) = '2013' AND DDZL.DDLB = 'N' AND DDZL.DDZT = 'Y' AND XXZL.lbdh = 'O' AND DDZL.XieXing = XXZL.XieXing AND DDZL.SheHao = XXZL.SheHao GROUP BY DATENAME(MONTH, DDZL.DDRQ),DATEPART(MONTH, DDZL.DDRQ) ORDER BY DATEPART(MONTH, DDZL.DDRQ)";
+        	conn.rs_title = "SELECT SUM(DDZL.Pairs) FROM DDZL DDZL,XXZL XXZL WHERE DATEPART(YEAR, DDZL.DDRQ) = '2014' AND DDZL.DDLB = 'N' AND DDZL.DDZT = 'Y' AND XXZL.lbdh = 'O' AND DDZL.XieXing = XXZL.XieXing AND DDZL.SheHao = XXZL.SheHao GROUP BY DATENAME(MONTH, DDZL.DDRQ),DATEPART(MONTH, DDZL.DDRQ) ORDER BY DATEPART(MONTH, DDZL.DDRQ)";
         	System.out.println(conn.rs_title);
         	conn.Conn_SQL();
         	i = 1;
@@ -121,7 +121,7 @@ public class Order_Status {
         	conn.rs.close();
         	
 			//2-2
-			conn.rs_title = "SELECT SUM(Pairs) FROM DDZL WHERE DATEPART(YEAR, DDJQ) = '2013' GROUP BY DATENAME(MONTH, DDJQ),DATEPART(MONTH, DDJQ) ORDER BY DATEPART(MONTH, DDJQ)";
+			conn.rs_title = "SELECT SUM(Pairs) FROM DDZL WHERE DATEPART(YEAR, DDJQ) = '2014' GROUP BY DATENAME(MONTH, DDJQ),DATEPART(MONTH, DDJQ) ORDER BY DATEPART(MONTH, DDJQ)";
 			System.out.println(conn.rs_title);
         	conn.Conn_SQL();
         	i = 1;
@@ -137,7 +137,7 @@ public class Order_Status {
 			conn.rs.close();
 			
 			//2-3
-			conn.rs_title = "SELECT SUM(Qty) FROM DDS WHERE DATEPART(YEAR, CHRQ) = '2013' GROUP BY DATENAME(MONTH, CHRQ),DATEPART(MONTH, CHRQ) ORDER BY DATEPART(MONTH, CHRQ)";
+			conn.rs_title = "SELECT SUM(Qty) FROM DDS WHERE DATEPART(YEAR, CHRQ) = '2014' GROUP BY DATENAME(MONTH, CHRQ),DATEPART(MONTH, CHRQ) ORDER BY DATEPART(MONTH, CHRQ)";
 			System.out.println(conn.rs_title);
         	conn.Conn_SQL();
         	i = 1;
@@ -153,7 +153,7 @@ public class Order_Status {
 			conn.rs.close();
 			
 			//2-4
-        	conn.rs_title = "SELECT SUM(DDZL.Pairs) FROM DDZL DDZL,XXZL XXZL WHERE DATEPART(YEAR, DDZL.DDRQ) = '2013' AND DDZL.DDLB = 'N' AND DDZL.DDZT = 'Y' AND XXZL.lbdh != 'O' AND DDZL.XieXing = XXZL.XieXing AND DDZL.SheHao = XXZL.SheHao GROUP BY DATENAME(MONTH, DDZL.DDRQ),DATEPART(MONTH, DDZL.DDRQ) ORDER BY DATEPART(MONTH, DDZL.DDRQ)";
+        	conn.rs_title = "SELECT SUM(DDZL.Pairs) FROM DDZL DDZL,XXZL XXZL WHERE DATEPART(YEAR, DDZL.DDRQ) = '2014' AND DDZL.DDLB = 'N' AND DDZL.DDZT = 'Y' AND XXZL.lbdh != 'O' AND DDZL.XieXing = XXZL.XieXing AND DDZL.SheHao = XXZL.SheHao GROUP BY DATENAME(MONTH, DDZL.DDRQ),DATEPART(MONTH, DDZL.DDRQ) ORDER BY DATEPART(MONTH, DDZL.DDRQ)";
         	System.out.println(conn.rs_title);
         	conn.Conn_SQL();
         	i = 1;
